@@ -42,6 +42,9 @@ class PostsRepositoryImpl implements PostsRepository {
         return Left(EmptyCacheFailure());
       }
     }
+    /*{​​​​​​ try {​​​​​​ await remoteDataSource.addPost(postModel); return Right(unit); }​​​​​​ on ServerException {​​​​​​ return Left(ServerFailure()); }​​​​​​ }​​​​​​ else {​​​​​​//pas de connexion internet return Left(OfflineFailure()); }​​​​​​
+
+ */
   }
 
   @override
