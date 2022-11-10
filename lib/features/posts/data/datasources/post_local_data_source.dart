@@ -1,11 +1,10 @@
 import 'dart:convert';
 
 import 'package:dartz/dartz.dart';
-import 'package:posts_app/core/exceptions/exceptions.dart';
-import 'package:posts_app/features/posts/data/models/post_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-
+import '../../../../core/exceptions/exceptions.dart';
+import '../models/post_model.dart';
 
 abstract class PostLocalDataSource {
   Future<List<PostModel>> getCachedPosts();
